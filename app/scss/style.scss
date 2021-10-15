@@ -1,0 +1,402 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header {
+    margin-top: 40px;
+    background-image: url(../images/header/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        display: flex;
+
+        li {
+            list-style-type: none;
+            & + li {
+                margin-left: 60px;
+            }
+        }
+        a {
+            @extend %geo-400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $text;
+        }
+    }
+    &__title {
+        @extend %geo-700;
+        font-size: 45px;
+        line-height: 60px;
+        margin-bottom: 20px;
+        padding-top: 120px;
+        color: $title;
+        letter-spacing: 0.01px;
+        span {
+            color: $accent;
+        }
+    }
+    &__text {
+        @extend %geo-500;
+        font-size: 20px;
+        line-height: 30px;
+        color: $text;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        margin-bottom: 250px;
+    }
+}
+
+.profile {
+    &__title {
+        padding-top: 410px;
+        margin: 0 auto 120px;
+        text-align: center;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 65px;
+        grid-row-gap: 30px;
+    }
+    &__item {
+        img {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.slogan {
+    background-image: url(../images/slogan/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: translateY(-70px);
+    position: relative;
+    z-index: -1;
+    &__title {
+        padding: 330px 0px 180px;
+        margin-left: 640px;
+    }
+}
+
+.steps {
+    &__title {
+        padding-top: 90px;
+        margin-bottom: 120px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+    &__number {
+        span {
+            @extend %geo-700;
+            font-size: 58px;
+            line-height: 79px;
+            color: $accent;
+        }
+        li + li {
+            margin-top: 135px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                height: 92px;
+                width: 5px;
+                background-color: #F5F9FF;
+                top: -114px;
+                left: 30px;
+            }
+        }
+    }
+    &__items {
+        margin: 25px 0 0px 50px;
+    }
+    &__item {
+        h3 {
+            @extend %geo-700;
+            font-size: 24px;
+            line-height: 36px;
+            color: $title;
+            margin-bottom: 16px;
+        }
+        p {
+            @extend %geo-400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $text;
+            margin-right: 65px;
+        }
+        &.steps__item--01 {
+            margin-bottom: 82px;
+        }
+        &.steps__item--02 {
+            margin-bottom: 106px;
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto 175px;
+    }
+}
+
+.control {
+    padding-top: 160px;
+    background-color: #F5F9FF;
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+        margin: 56px auto 120px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        padding-bottom: 160px;
+    }
+    &__item {
+        padding: 40px;
+        border-radius: 15px;
+        background-color: #fff;
+        img {
+            margin-bottom: 20px;
+        }
+        h3 {
+            @extend %geo-700;
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 8px;
+            color: $title;
+        }
+        p {
+            @extend %geo-400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $text;
+        }
+    }
+}
+
+.promotion {
+    &__title {
+        text-align: center;
+        margin-bottom: 56px;
+    }
+    &__text {
+        text-align: center;
+        margin: 0 auto 120px;
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 100px;
+        grid-column-gap: 168px;
+    }
+    &__item {
+        margin-top: 125px;
+        h3 {
+            @extend %geo-700;
+            font-size: 24px;
+            line-height: 36px;
+            color: $title;
+            margin-bottom: 16px;
+        }
+        p {
+            @extend %geo-400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $title;
+        }
+    }
+}
+
+.rates {
+    padding-bottom: 220px;
+    ul {
+        margin-bottom: 52px;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 56px;
+        margin-top: 120px;
+    }
+    &__text {
+        text-align: center;
+        margin: 0 auto 120px;
+    }
+    &__items {
+        margin: 0 56px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+    }
+    &__item {
+        padding: 60px;
+        border: 1px solid rgba(51, 51, 153, 0.2);
+        border-radius: 23px;
+    }
+    &__item-title {
+        @extend %geo-700;
+        font-size: 40px;
+        line-height: 60px;
+        color: $title;
+        text-align: center;
+    }
+    &__item-subtitle {
+        text-align: center;
+        @extend %geo-700;
+        font-size: 67px;
+        line-height: 60px;
+        color: $accent;
+        margin: 32px auto 84px;
+        position: relative;
+        span {
+            @extend %geo-400;
+            font-size: 27px;
+            line-height: 60px;
+            color: $text;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            width: 240px;
+            height: 1px;
+            top: 90px;
+            left: 48px;
+            background-color: #00CC99;
+        }
+    }
+    &__item-list li {
+        margin: 0 0 20px 32px;
+
+        &.rates--check {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 24px;
+                height: 24px;
+                top: -4px;
+                left: -33px;
+                background-image: url(../images/rates/check.svg);
+            }
+        }
+        &.rates--uncheck {
+            position: relative;
+            color: rgba(51, 51, 153, 0.2);
+            &::before {
+                position: absolute;
+                content: '';
+                width: 24px;
+                height: 24px;
+                top: -4px;
+                left: -33px;
+                background-image: url(../images/rates/uncheck.svg);
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.question {
+    padding-bottom: 160px;
+    &__title {
+        margin: 0 auto 120px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        img {
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        span {
+            margin-bottom: 16px;
+        }
+        input {
+            margin-bottom: 40px;
+            height: 67px;
+            border-radius: 12px;
+            border: 1px solid rgba(51, 51, 153, 0.2);
+            padding-left: 16px;
+            color: $text;
+            @extend %geo-400;
+            font-size: 18px;
+            line-height: 27px;
+            &::placeholder {
+                color: rgba(51, 51, 153, 0.2);
+            }
+        }
+        button {
+            margin-top: 64px;
+        }
+        p {
+            @extend %geo-400;
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 16px;
+            color: $text;
+            a {
+                color: $accent;
+            }
+        }
+    }
+}
+
+.footer {
+    padding-top: 160px;
+    background-color: #F5F9FF;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        img {
+            height: 75px;
+        }
+        a {
+            margin-bottom: 16px;
+        }
+    }
+    &__list, 
+    &__profile {
+        display: flex;
+        flex-direction: column;
+    }
+    &__social {
+        display: flex;
+        img {
+            margin-right: 20px;
+            height: 24px;
+        }
+    }
+    &__bot {
+        margin: 120px 0 60px;
+        a {
+            margin-right: 60px;
+        }
+    }
+}      
+
+
+
+@import 'media'

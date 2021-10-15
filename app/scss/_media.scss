@@ -1,0 +1,588 @@
+@media (max-width:1150px) {
+    .header {
+        &__wrapper, &__screen {
+            margin: 0 30px;
+        }
+    }
+    .profile {
+       &__inner {
+        margin: 0 30px;
+       }
+    }
+    .slogan {
+        &__title {
+            margin-left: 550px;
+            margin-right: 30px;
+        }
+    }
+    .steps {
+        &__wrapper {
+            margin: 0 30px 120px;
+        }
+    }
+    .control {
+        &__items {
+            margin: 0 30px;
+        }
+    }
+    .promotion {
+        &__box {
+            margin: 0 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        &__item {
+            margin-top: 0px;
+        }
+        &__text {
+            margin: 0 30px 120px;
+        }
+    }
+    .question {
+        &__wrapper {
+            margin: 0 30px;
+            img {
+                margin-right: 80px;
+                width: 550px;
+            }
+        }
+    }
+}
+
+@media (max-width:970px) {
+    .slogan {
+        &__title {
+            margin-left: 500px;
+        }
+    }
+    .control {
+        &__item {
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            h3 {
+                margin: 0px 30px;
+                min-width: 230px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .promotion {
+        &__box {
+            grid-column-gap: 100px;
+        }
+    }
+    .rates {
+        &__item {
+            padding: 45px;
+        }
+    }
+    .question {
+        &__wrapper {
+            margin: 0 30px;
+            img {
+                width: 450px;
+            }
+        }
+    }
+    .footer {
+        &__wrapper {
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .profile {
+        &__title {
+            padding-top: 250px;
+        }
+        img {
+            height: 45px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+    .slogan {
+        background-position: -160px 0;
+        &__title {
+            padding-top: 230px;
+        }
+    }
+    .promotion {
+        &__box {
+            grid-column-gap: 80px;
+        }
+    }
+    .rates {
+        &__item {
+            padding: 35px;
+        }
+        &__item-list li {
+            margin: 0 0 10px 32px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .question {
+        &__title {
+            margin: 0 30px 100px;
+            line-height: 40px;
+        }
+        &__wrapper {
+            margin: 0 30px;
+            background-image: url(../images/question/illustration-transparent.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            img {
+                display: none;
+            }
+        }
+        &__form {
+            margin: 0 150px;
+            input {
+                border: 1px solid rgba(51, 51, 153, 0.8);
+                &::placeholder {
+                    color: rgba(51, 51, 153, 0.4);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:740px) {
+    .title {
+        font-size: 25px;
+    }
+    .header {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__nav {
+            margin-top: 20px;
+        }
+        &__text, &__btn {
+            font-size: 15px;
+        }
+    }
+    .profile {
+        &__title {
+            padding-top: 200px;
+        }
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        img {
+            height: 40px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+    .slogan {
+        background-position: -220px 0;
+        &__title {
+            padding-top: 200px;
+            margin-left: 400px;
+        }
+    }
+    .steps {
+        &__title {
+            padding-top: 80px;
+            margin: 0 30px 80px;
+        }
+        &__btn {
+            margin-bottom: 100px;
+        }
+    }
+    .control {
+        &__item {
+            padding: 25px;
+            h3 {
+                margin: 0 20px;
+                font-size: 20px;
+                line-height: 30px;
+                min-width: 200px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    .promotion {
+        &__box {
+            grid-column-gap: 50px;
+            img {
+                width: 300px;
+            }
+        }
+        &__item {
+            h3 {
+                font-size: 20px;
+                line-height: 25px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    .rates {
+        padding-bottom: 150px;
+        &__item {
+            padding: 25px;
+        }
+        &__item-subtitle {
+            font-size: 55px;
+            margin-bottom: 60px;
+            &::before {
+                display: none;
+            }
+        }
+        &__title {
+            margin: 100_ 30px 50px;
+            line-height: 40px;
+        }
+        &__text {
+            margin: 0 auto 100px;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .footer {
+        &__wrapper {
+            grid-template-columns: repeat(2,1fr);
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        &__list, &__social {
+            text-align: right;
+            justify-content: end;
+            margin-bottom: 30px;
+        }
+        &__bot {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .rates {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 50px;
+            margin: 0 90px;
+        }
+    }
+    .question {
+        &__form {
+            margin: 0 100px;
+        }
+        &__title {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .slogan {
+        background-position: -270px 0;
+        &__title {
+            margin-left: 300px;
+            line-height: 40px;
+        }
+    }
+    .control {
+        padding-top: 100px;
+        &__item {
+            padding: 15px;
+            img {
+                height: 35px;
+            }
+            h3 {
+                margin: 0 15px 0px 20px;
+                font-size: 17px;
+                line-height: 25px;
+                min-width: 160px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 15px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 36px 30px 60px;
+        }
+    }
+    .promotion {
+        &__box {
+            grid-row-gap: 100px;
+            grid-column-gap: 30px;
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .question {
+        padding-bottom: 100px;
+        &__form {
+            margin: 0 70px;
+        }
+    }
+}
+
+@media (max-width:510px) {
+    .header {
+        background-size: cover;
+        background-position: -600px 0px;
+        background-image: url(../images/header/bg-transparent.png);
+        &__nav {
+            align-items: center;
+            text-align: center;
+            li {
+                & + li {
+                    margin-left: 40px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 10px;
+                }
+            }
+        }
+        &__btn {
+            margin-bottom: 150px;
+        }
+    }
+    .profile {
+        &__title {
+            padding-top: 100px;
+            margin: 0px 30px 100px;
+            line-height: 40px;
+        }
+        &__inner {
+            grid-column-gap: 40px;
+        }
+    }
+    .slogan {
+        background-position: -165px 0;
+        background-image: url(../images/slogan/bg-transparent.png);
+        &__title {
+            margin-left: 170px;
+            line-height: 40px;
+        }
+    }
+    .steps {
+        &__title {
+            padding-top: 0px;
+            margin: 0 30px 40px;
+            line-height: 40px;
+        }
+        &__items {
+            margin-right: 0px;
+            margin-left: 30px;
+            h3 {
+                line-height: 20px;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            p {
+                margin-right: 30px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+        &__item {
+            &.steps__item--01 {
+                margin-bottom: 100px;
+            }
+            &.steps__item--02 {
+                margin-bottom: 90px;
+            }
+        }
+    }
+    .control {
+        &__text {
+            &::before {
+                display: none;
+            }
+        }
+        &__items {
+            padding-bottom: 80px;
+        }
+        &__item {
+            flex-direction: column;
+            padding: 20px;
+            h3 {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        &__title {
+            line-height: 40px;
+        }
+    }
+    .promotion {
+        &__box {
+            grid-row-gap: 50px;
+            grid-column-gap: 0px;
+            img {
+                width: 170px;
+            }
+        }
+        &__text {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .rates {
+        padding-bottom: 80px;
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+        }
+    }
+    .question {
+        padding-bottom: 100px;
+        &__form {
+            margin: 0 30px;
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:460px) {
+    .steps {
+        &__item {
+            &.steps__item--01 {
+                margin-bottom: 80px;
+            }
+            &.steps__item--02 {
+                margin-bottom: 85px;
+            }
+        }
+    }
+    .promotion {
+        &__box {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 40px;
+            img {
+                display: none;
+            }
+        }
+        &__item {
+            h3 {
+                max-width: 230px;
+                text-align: center;
+                margin: 0 auto 10px;
+            }
+        }
+        &__text {
+            margin-bottom: 80px;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+    }
+    .rates {
+        &__items {
+            margin: 0 70px;
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .steps {
+        &__item {
+            &.steps__item--01 {
+                margin-bottom: 65px;
+            }
+            &.steps__item--02 {
+                margin-bottom: 65px;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .header {
+        background-position: -700px 0px;
+        &__title {
+            line-height: 40px;
+        }
+        &__text {
+            line-height: 20px;
+        }
+    }
+    .profile {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+            img {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .steps {
+        &__item {
+            &.steps__item--01 {
+                margin-bottom: 35px;
+            }
+            &.steps__item--02 {
+                margin-bottom: 65px;
+            }
+        }
+    }
+    .rates {
+        &__items {
+            margin: 0 50px;
+        }
+    }
+    .question {
+        padding-bottom: 80px;
+        &__form {
+            margin: 0 15px;
+        }
+    }
+}
+
+@media (max-width:370px) {
+    .steps {
+        &__items {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        &__item {
+            &.steps__item--01 {
+                margin-bottom: 15px;
+            }
+            &.steps__item--02 {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+$title: #000099;
+$text: #333399;
+$accent: #00CC99;
+
+%geo-300 {
+    font-family: 'URW Geometric', sans-serif;
+    font-weight: 300;
+}
+%geo-400 {
+    font-family: 'URW Geometric', sans-serif;
+    font-weight: 400;
+}
+%geo-500 {
+    font-family: 'URW Geometric', sans-serif;
+    font-weight: 500;
+}
+%geo-600 {
+    font-family: 'URW Geometric', sans-serif;
+    font-weight: 600;
+}
+%geo-700 {
+    font-family: 'URW Geometric', sans-serif;
+    font-weight: 700;
+}
+
+.title {
+    @extend %geo-700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $title;
+    span {
+        color: $accent;
+    }
+}
+
+.text {
+    @extend %geo-400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text;
+}
+
+.top_line {
+    max-width: 600px;
+position: relative;
+&::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 1px;
+    top: -28px;
+    left: 200px;
+    background-color: $text;
+    }
+}
+
+.btn {
+    @extend %geo-400;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    border-radius: 13px;
+    background-color: $accent;
+    color: #fff;
+    padding: 16px 24px;
+    cursor: pointer;
+}
